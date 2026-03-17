@@ -2,7 +2,7 @@ import { MoveRight } from "lucide-react"
 
 const RightCards = (props) => {
   return (
-    <div className=" h-full w-80  overflow-hidden rounded-4xl relative ">
+    <div className=" h-full w-80  shrink-0 overflow-hidden rounded-4xl relative ">
         <img className="h-full w-full object-cover " src={props.img} alt="" />
         <div className="absolute inset-0 bg-black/30">
 

@@ -21,11 +21,32 @@ const users = [
     text: 'These individuals lack access to essential banking services and need simple, affordable digital financial solutions.',
     color: 'orange'
   },
+   {
+    id: 4,
+    img: 'https://images.pexels.com/photos/7582897/pexels-photo-7582897.jpeg',
+    status: 'Underbanked',
+    text: 'These individuals lack access to essential banking services and need simple, affordable digital financial solutions.',
+    color: 'orange'
+  },
+    {
+    id: 5,
+    img: 'https://images.pexels.com/photos/4342098/pexels-photo-4342098.jpeg',
+    status: 'Underbanked',
+    text: 'These individuals lack access to essential banking services and need simple, affordable digital financial solutions.',
+    color: 'orange'
+  },
+    {
+    id: 6,
+    img: 'https://images.unsplash.com/photo-1534030347209-467a5b0ad3e6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    status: 'Underbanked',
+    text: 'These individuals lack access to essential banking services and need simple, affordable digital financial solutions.',
+    color: 'orange'
+  },
 
  ]
 const Rightcontent = () => {
   return (
-    <div className="right w-4/6 p-3 flex justify-between gap-5 ">
+    <div id="usercards" className="right w-4/6 p-3 overflow-x-scroll flex justify-between gap-5 ">
         {
             users.map(el=><RightCards id={el.id} img={el.img} status= {el.status} color = {el.color}  text={el.text}/>)
         }
